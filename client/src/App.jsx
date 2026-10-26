@@ -46,6 +46,11 @@ function App() {
                 <RecentActivity/>
           </ProtectedRoutes>
               }/>
+        <Route path='/results' element={
+          <ProtectedRoutes>
+            <RecentActivity/>
+          </ProtectedRoutes>
+        }/>
         <Route path='/results/:interviewId' element={
           <ProtectedRoutes>
             <Result/>
